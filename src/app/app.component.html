@@ -1,107 +1,24 @@
-<!-- <section class="list">
-<mat-card class="sub-card-two" *ngFor="let user of users1 ">           
-    <mat-card-header>
-      <mat-card-subtitle>{{user.app_name}} - {{user.appid}}</mat-card-subtitle>
-      <mat-card-subtitle>{{user.reason}}</mat-card-subtitle>
-      </mat-card-header>
-
-<mat-form-field>
-    <mat-select placeholder="Status" [value]="user.status">
-      <mat-option [value]="val.id" *ngFor="let val of options ">
-      {{val.id}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field> <br>
-
-  <mat-chip-list>
-      <mat-chip color="accent" selected>{{user.since_created}}</mat-chip>
-      <mat-chip >{{user.platform}}</mat-chip>
-    </mat-chip-list>
-</mat-card>
-</section> -->
-
-
 <mat-drawer-container class="example-container">
-    <mat-drawer class="nav" mode="side" opened>
+  <mat-drawer class="nav" mode="side" opened>
     <h2>Vajro</h2>
 
-    <a routerLink="/home" routerLinkActive="active"> Home</a><br><br>
-    <a routerLink="/production-task" routerLinkActive="active">Production Task</a><br><br>
+    <a routerLink="/home" routerLinkActive="active"> Home</a><br /><br />
+    <a routerLink="/production-task" routerLinkActive="active"
+      >Production Task</a
+    ><br /><br />
     <a routerLink="/sign-out" routerLinkActive="active">Sign Out</a>
-    
-    
-    </mat-drawer>
-    <mat-drawer-content>
-        <mat-grid-list cols="30" rowHeight="2.5:7">
-            <mat-grid-tile>
-                <mat-card class='first-card'> 
-                    <mat-card-header>
-                        <mat-card-title> Onhold Tasks (3)</mat-card-title>
-                      </mat-card-header>
-
-                      
-                          <app-user-details [users]="users1" [options]= "options">
-                            
-                          </app-user-details>
-                              
-                
-                </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <mat-card class='second-card'> 
-                    <mat-card-header>
-                        <mat-card-title>Pending Tasks (2)</mat-card-title>
-                      </mat-card-header>
-                
-                      <app-user-details [users]="users2" [options]= "options">
-                            
-                        </app-user-details>
-                
-                </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <mat-card class='third-card'> 
-                    <mat-card-header>
-                        <mat-card-title>Updated Tasks (2)</mat-card-title>
-                      </mat-card-header>
-
-                      <app-user-details [users]="users3" [options]= "options">
-                            
-                        </app-user-details>
-                
-                </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <mat-card class='four-card'> 
-                    <mat-card-header>
-                        <mat-card-title>Submited Tasks (1)</mat-card-title>
-                      </mat-card-header>
-
-                      <app-user-details [users]="users4" [options]= "options">
-                            
-                        </app-user-details>
-                
-                </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <mat-card class='four-card'> 
-                    <mat-card-header>
-                        <mat-card-title>Live Tasks (1)</mat-card-title>
-                      </mat-card-header>
-
-
-                        <app-user-details [users]="users5" [options]= "options">
-                            
-                          </app-user-details>
-                
-                </mat-card>
-            </mat-grid-tile>
-          </mat-grid-list>
-    </mat-drawer-content>
-  </mat-drawer-container>
-
-
-
-
-
-  
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-grid-list cols="30" rowHeight="2.5:7">
+      <mat-grid-tile *ngFor="let task of all">
+        <mat-card class="first-card">
+          <mat-card-header>
+            <mat-card-title> {{ task.title }} - {{ task.no }} </mat-card-title>
+          </mat-card-header>
+          <app-user-details [users]="task.users" [options]="options">
+          </app-user-details>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-drawer-content>
+</mat-drawer-container>
