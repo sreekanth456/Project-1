@@ -1,0 +1,338 @@
+
+
+
+<!-- <mat-drawer-container class="example-container">
+    <mat-drawer class="nav" mode="side" opened>
+    <h2>Vajro</h2>
+
+    <a routerLink="/home" routerLinkActive="active"> Home</a><br><br>
+    <a routerLink="/production-task" routerLinkActive="active">Production Task</a><br><br>
+    <a routerLink="/sign-out" routerLinkActive="active">Sign Out</a>
+    
+    
+    </mat-drawer>
+    <mat-drawer-content>
+        <mat-grid-list cols="30" rowHeight="2.5:6">
+            <mat-grid-tile>
+                <mat-card class='main-card'> 
+                    <mat-card-header>
+                        <mat-card-title>Onhold Tasks (2)</mat-card-title>
+                      </mat-card-header>
+                       
+                
+                <mat-card class="sub-card-one" mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''"> 
+                  <mat-icon> Clear</mat-icon>
+
+                    <mat-card-header>
+                      <mat-card-subtitle>A&A Glitter-13589</mat-card-subtitle>
+                      <mat-card-subtitle>Fresh Upload</mat-card-subtitle>
+                      </mat-card-header>
+                     
+                
+                <mat-form-field>
+                    <mat-select placeholder="Status">
+                      <mat-option *ngFor="let opt of options " [value]="opt.id" >
+                        {{opt.name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field> <br>
+                
+                  <mat-chip-list>
+                      <mat-chip color="accent" selected>36 days ago</mat-chip>
+                      <mat-chip style="text-align:left" >ios</mat-chip>
+                    </mat-chip-list>
+                </mat-card>
+                <br><br>
+                
+                
+                <mat-card class="sub-card-two"> 
+                
+                    <mat-card-header>
+                      <mat-card-subtitle>Ariakatb - 13408</mat-card-subtitle>
+                      <mat-card-subtitle>Face book SDK added</mat-card-subtitle>
+                      </mat-card-header>
+                
+                <mat-form-field>
+                    <mat-select placeholder="Status">
+                      <mat-option *ngFor="let opt of options " [value]="opt.id">
+                        {{opt.name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field> <br>
+                
+                  <mat-chip-list>
+                      <mat-chip color="accent" selected>25 days ago</mat-chip>
+                      <mat-chip >android</mat-chip>
+                    </mat-chip-list>
+                </mat-card>
+                
+                </mat-card>
+        
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class='second-card'> 
+                    <mat-card-header>
+                        <mat-card-title>Pending Tasks (1)</mat-card-title>
+                      </mat-card-header>
+                
+                <mat-card class="sub-card-one"> 
+                
+                    <mat-card-header>
+                      <mat-card-subtitle>Biken biker.com - 12604</mat-card-subtitle>
+                      <mat-card-subtitle>Need to add more than 6</mat-card-subtitle>
+                      <mat-card-subtitle>products in whishlist</mat-card-subtitle>
+        
+                      </mat-card-header>
+                
+                <mat-form-field>
+                    <mat-select placeholder="Status">
+                      <mat-option *ngFor="let opt of options " [value]="opt.id">
+                        {{opt.name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field> <br>
+                
+                  <mat-chip-list>
+                      <mat-chip color="accent" selected>created 8 days ago</mat-chip>
+                      <mat-chip style="text-align:left" >android</mat-chip>
+                    </mat-chip-list>
+                </mat-card>
+                <br><br>
+                
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class='third-card'> 
+                    <mat-card-header>
+                        <mat-card-title>Upload Tasks (0)</mat-card-title>
+                      </mat-card-header>
+                
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class='four-card'> 
+                    <mat-card-header>
+                        <mat-card-title>Submited Tasks (0)</mat-card-title>
+                      </mat-card-header>
+                
+                </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+    </mat-drawer-content>
+  </mat-drawer-container>
+   -->
+
+
+
+
+<!-- <mat-grid-list cols="5" rowHeight="2.9:7">
+    <mat-grid-tile>
+        <mat-card class='main-card'> 
+            <mat-card-header>
+                <mat-card-title>Onhold Tasks (2)</mat-card-title>
+              </mat-card-header>
+              
+        
+        <mat-card class="sub-card-one"> 
+        
+            <mat-card-header>
+              <mat-card-subtitle>A&A Glitter-13589</mat-card-subtitle>
+              <mat-card-subtitle>Fresh Upload</mat-card-subtitle>
+              </mat-card-header>
+        
+        <mat-form-field>
+            <mat-select placeholder="Status">
+              <mat-option *ngFor="let opt of options " [value]="opt.id">
+                {{opt.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> <br>
+        
+          <mat-chip-list>
+              <mat-chip color="accent" selected>36 days ago</mat-chip>
+              <mat-chip style="text-align:left" >ios</mat-chip>
+            </mat-chip-list>
+        </mat-card>
+        <br><br>
+        
+        
+        <mat-card class="sub-card-two"> 
+        
+            <mat-card-header>
+              <mat-card-subtitle>Ariakatb - 13408</mat-card-subtitle>
+              <mat-card-subtitle>Face book SDK added</mat-card-subtitle>
+              </mat-card-header>
+        
+        <mat-form-field>
+            <mat-select placeholder="Status">
+              <mat-option *ngFor="let opt of options " [value]="opt.id" >
+                {{opt.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> <br>
+        
+          <mat-chip-list>
+              <mat-chip color="accent" selected>25 days ago</mat-chip>
+              <mat-chip (click)="onAndroid()">android</mat-chip>
+            </mat-chip-list>
+        </mat-card>
+        
+        </mat-card>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class='second-card'> 
+            <mat-card-header>
+                <mat-card-title>Pending Tasks (1)</mat-card-title>
+              </mat-card-header>
+        
+        <mat-card class="sub-card-one"> 
+        
+            <mat-card-header>
+              <mat-card-subtitle>Biken biker.com - 12604</mat-card-subtitle>
+              <mat-card-subtitle>Need to add more than 6</mat-card-subtitle>
+              <mat-card-subtitle>products in whishlist</mat-card-subtitle>
+
+              </mat-card-header>
+        
+        <mat-form-field>
+            <mat-select placeholder="Status">
+              <mat-option *ngFor="let opt of options " [value]="opt.id" >
+                {{opt.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> <br>
+        
+          <mat-chip-list>
+              <mat-chip color="accent" selected>created 8 days ago</mat-chip>
+              <mat-chip style="text-align:left" >android</mat-chip>
+            </mat-chip-list>
+        </mat-card>
+        <br><br>
+        
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class='third-card'> 
+            <mat-card-header>
+                <mat-card-title>Upload Tasks (0)</mat-card-title>
+              </mat-card-header>
+        
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class='four-card'> 
+            <mat-card-header>
+                <mat-card-title>Submited Tasks (0)</mat-card-title>
+              </mat-card-header>
+        
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list> -->
+
+
+<!-- on Hold -->
+
+<!-- <mat-card class='main-card'> 
+    <mat-card-header>
+        <mat-card-title>Onhold Tasks (2)</mat-card-title>
+      </mat-card-header>
+      
+
+<mat-card class="sub-card-one"> 
+
+    <mat-card-header>
+      <mat-card-subtitle>A&A Glitter-13589</mat-card-subtitle>
+      <mat-card-subtitle>Fresh Upload</mat-card-subtitle>
+      </mat-card-header>
+
+<mat-form-field>
+    <mat-select placeholder="Status">
+      <mat-option *ngFor="let opt of options " [value]="opt.id>
+        {{opt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> <br>
+
+  <mat-chip-list>
+      <mat-chip color="accent" selected>36 days ago</mat-chip>
+      <mat-chip style="text-align:left" >ios</mat-chip>
+    </mat-chip-list>
+</mat-card>
+<br><br>
+
+
+<mat-card class="sub-card-two"> 
+
+    <mat-card-header>
+      <mat-card-subtitle>Ariakatb - 13408</mat-card-subtitle>
+      <mat-card-subtitle>Face book SDK added</mat-card-subtitle>
+      </mat-card-header>
+
+<mat-form-field>
+    <mat-select placeholder="Status">
+      <mat-option *ngFor="let opt of options " >
+        {{opt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> <br>
+
+  <mat-chip-list>
+      <mat-chip color="accent" selected>25 days ago</mat-chip>
+      <mat-chip >android</mat-chip>
+    </mat-chip-list>
+</mat-card>
+
+</mat-card> -->
+
+
+
+<!-- Pending task -->
+
+<!-- <mat-card class='second-card'> 
+    <mat-card-header>
+        <mat-card-title>Pending Tasks (1)</mat-card-title>
+      </mat-card-header>
+
+<mat-card class="sub-card-one"> 
+
+    <mat-card-header>
+      <mat-card-subtitle>Biken biker.com - 12604</mat-card-subtitle>
+      <mat-card-subtitle>Need to add more than 6 products in whishlist</mat-card-subtitle>
+      </mat-card-header>
+
+<mat-form-field>
+    <mat-select placeholder="Status">
+      <mat-option *ngFor="let opt of options ">
+        {{opt.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> <br>
+
+  <mat-chip-list>
+      <mat-chip color="accent" selected>created 8 days ago</mat-chip>
+      <mat-chip style="text-align:left" >android</mat-chip>
+    </mat-chip-list>
+</mat-card>
+<br><br>
+
+</mat-card> -->
+
+<!-- upload Tasks -->
+
+<!-- <mat-card class='third-card'> 
+    <mat-card-header>
+        <mat-card-title>Upload Tasks (0)</mat-card-title>
+      </mat-card-header>
+
+</mat-card> -->
+
+<!-- submited tasks -->
+
+<!-- <mat-card class='four-card'> 
+    <mat-card-header>
+        <mat-card-title>Submited Tasks (0)</mat-card-title>
+      </mat-card-header>
+
+</mat-card> -->
+

@@ -1,0 +1,27 @@
+
+ <section class="list" >
+
+<mat-card *ngFor="let user of users " >  
+
+    <mat-card-subtitle >{{user.app_name}} - {{user.appid}}</mat-card-subtitle>
+    <mat-card-subtitle>{{user.reason}}</mat-card-subtitle>
+
+<mat-form-field>
+  <mat-select placeholder="Status" [value]="user.status">
+    <mat-option [value]="val.id" *ngFor="let val of options ">
+    {{val.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field> <br>
+
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-chip-list>
+    <mat-chip color="accent" selected>{{user.since_created}}</mat-chip>
+
+      <mat-chip  >{{user.platform}}</mat-chip>
+    </mat-chip-list>
+  </div>
+    
+</mat-card>
+
+</section>
